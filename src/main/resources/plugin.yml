@@ -1,0 +1,17 @@
+name: ScratchLottery
+version: ${project.version}
+main: jp.kamei.scratchlottery.ScratchLotteryPlugin
+api-version: '26.2'
+softdepend: [Vault]
+
+commands:
+  scratch:
+    description: スクラッチ宝くじの購入 GUI を開きます
+    usage: /scratch [reload|stats]
+    aliases: [scratchlottery]
+
+permissions:
+  scratchlottery.use:
+    default: true
+  scratchlottery.reload:
+    default: op

@@ -1,0 +1,104 @@
+# 1枚あたりの購入価格
+ticket-price: 300.0
+
+# 当たり本数の総数を含む1バッチの総発行枚数
+# 指定本数を使い切ると自動で次のバッチへ切り替わります
+pool-size: 100000
+
+# バッチを自動リセットする日数
+# 0 以下で自動リセット無効
+batch-reset-days: 7
+
+# GUI に表示するワンクリック購入枚数
+purchase-options:
+  - 1
+  - 10
+  - 30
+
+# チャット入力で一度に購入できる最大枚数
+custom-input-max: 1000
+
+# 1等が出たときにサーバー全体へ告知するか
+broadcast-first-prize: true
+
+gui:
+  title: "<gold><bold>スクラッチ宝くじ"
+  info-name: "<yellow><bold>スクラッチ宝くじ"
+  info-lore:
+    - "<gray>1枚価格: <yellow>{ticket_price}"
+    - "<gray>現在バッチ残り: <aqua>{remaining_tickets}枚"
+    - "<gray>次回リセットまで: <aqua>{reset_in}"
+    - "<gray>クリックで自分の統計を表示"
+  prize-list-name: "<aqua><bold>賞一覧"
+  prize-list-lore:
+    - "<gray>1等から5等までの報酬を表示します"
+    - "<gray>クリックで賞一覧を表示"
+  option-name: "<green><bold>{amount}枚購入"
+  option-lore:
+    - "<gray>合計金額: <yellow>{total_cost}"
+    - "<gray>クリックで購入します"
+  custom-name: "<gold><bold>カスタム枚数"
+  custom-lore:
+    - "<gray>チャットに購入枚数を入力します"
+    - "<gray>最大 <yellow>{custom_max}枚"
+  close-name: "<red><bold>閉じる"
+
+messages:
+  prefix: "<gray>[<gold>スクラッチ宝くじ<gray>] "
+  players-only: "<red>このコマンドはプレイヤーのみ使用できます。"
+  no-permission: "<red>そのコマンドを使う権限がありません。"
+  economy-unavailable: "<red>Vault または経済プラグインが見つかりません。"
+  reload-complete: "<green>設定を再読み込みしました。"
+  stats-header: "<yellow><bold>{player} のスクラッチ統計"
+  stats-purchased: "<gray>購入枚数: <yellow>{amount}枚"
+  stats-winning-tickets: "<gray>当選枚数: <yellow>{amount}枚"
+  stats-spent: "<gray>累計支払い: <yellow>{amount}"
+  stats-payout: "<gray>累計払戻: <green>{amount}"
+  stats-net: "<gray>累計差額: <aqua>{amount}"
+  stats-prize-line: "<gray>{prize}: <yellow>{count}回"
+  stats-no-win-data: "<gray>まだ当選データはありません。"
+  prize-list-header: "<yellow><bold>スクラッチ宝くじの賞一覧"
+  prize-list-reset: "<gray>次回リセットまで: <aqua>{reset_in}"
+  prize-list-line: "<gold>{prize}<gray> / 賞金: <green>{reward}<gray> / 残り: <aqua>{remaining}本<gray>{items_suffix}"
+  reset-disabled-label: "自動リセットなし"
+  reset-less-than-minute-label: "1分未満"
+  custom-input-prompt: "<yellow>チャットに購入枚数を入力してください。<gray>(cancel で中止)"
+  custom-input-cancelled: "<gray>カスタム購入を中止しました。"
+  invalid-number: "<red>1以上の整数を入力してください。"
+  quantity-too-high: "<red>一度に購入できる最大枚数は <yellow>{max}枚<red> です。"
+  insufficient-money: "<red>所持金が足りません。必要: <yellow>{cost}<red> / 所持: <yellow>{balance}"
+  purchase-header: "<yellow>{amount}枚購入しました。<gray>支払い: <yellow>{cost}"
+  purchase-no-win: "<gray>今回は当選なしでした。"
+  purchase-prize-line: "<gold>{prize}<gray> x<yellow>{count}<gray> / 払戻: <green>{reward}<gray>{items_suffix}"
+  purchase-items-dropped: "<gray>インベントリに入らなかったアイテムを足元へ落としました: <yellow>{items}"
+  purchase-total: "<gray>合計払戻: <green>{payout}<gray> / 差額: <yellow>{net}"
+  remaining-tickets: "<gray>現在バッチ残り: <aqua>{remaining}枚"
+  first-prize-broadcast: "<gold><bold>{player}</bold> がスクラッチ宝くじで <yellow>{prize}<gold> に当選しました。払戻: <green>{reward}"
+
+prizes:
+  first:
+    display-name: "1等"
+    reward: 300000.0
+    winning-tickets: 2
+    # MATERIAL:個数 の形式で設定
+    item-rewards: []
+  second:
+    display-name: "2等"
+    reward: 50000.0
+    winning-tickets: 20
+    item-rewards: []
+  third:
+    display-name: "3等"
+    reward: 10000.0
+    winning-tickets: 600
+    item-rewards: []
+  fourth:
+    display-name: "4等"
+    reward: 2000.0
+    winning-tickets: 800
+    item-rewards: []
+  fifth:
+    display-name: "5等"
+    reward: 200.0
+    winning-tickets: 20000
+    item-rewards: []
