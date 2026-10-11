@@ -1,4 +1,4 @@
-package jp.kamei.scratchlottery.util;
+package jp.pakupaku.scratchlottery.util;
 
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.minimessage.MiniMessage;

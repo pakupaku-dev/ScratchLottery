@@ -1,9 +1,9 @@
-package jp.kamei.scratchlottery.listener;
+package jp.pakupaku.scratchlottery.listener;
 
 import io.papermc.paper.event.player.AsyncChatEvent;
-import jp.kamei.scratchlottery.gui.PurchaseMenuHolder;
-import jp.kamei.scratchlottery.service.LotteryService;
-import jp.kamei.scratchlottery.util.TextUtil;
+import jp.pakupaku.scratchlottery.gui.PurchaseMenuHolder;
+import jp.pakupaku.scratchlottery.service.LotteryService;
+import jp.pakupaku.scratchlottery.util.TextUtil;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;

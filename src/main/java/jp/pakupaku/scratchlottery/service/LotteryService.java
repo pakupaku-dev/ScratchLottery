@@ -1,11 +1,11 @@
-package jp.kamei.scratchlottery.service;
+package jp.pakupaku.scratchlottery.service;
 
-import jp.kamei.scratchlottery.ScratchLotteryPlugin;
-import jp.kamei.scratchlottery.gui.PurchaseMenuHolder;
-import jp.kamei.scratchlottery.model.PlayerLotteryStats;
-import jp.kamei.scratchlottery.model.PrizeTier;
-import jp.kamei.scratchlottery.model.PurchaseSummary;
-import jp.kamei.scratchlottery.util.TextUtil;
+import jp.pakupaku.scratchlottery.ScratchLotteryPlugin;
+import jp.pakupaku.scratchlottery.gui.PurchaseMenuHolder;
+import jp.pakupaku.scratchlottery.model.PlayerLotteryStats;
+import jp.pakupaku.scratchlottery.model.PrizeTier;
+import jp.pakupaku.scratchlottery.model.PurchaseSummary;
+import jp.pakupaku.scratchlottery.util.TextUtil;
 import net.kyori.adventure.text.Component;
 import net.milkbowl.vault.economy.Economy;
 import net.milkbowl.vault.economy.EconomyResponse;

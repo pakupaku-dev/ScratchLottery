@@ -1,7 +1,8 @@
 name: ScratchLottery
 version: ${project.version}
-main: jp.kamei.scratchlottery.ScratchLotteryPlugin
+main: jp.pakupaku.scratchlottery.ScratchLotteryPlugin
 api-version: '26.2'
+author: pakupaku
 softdepend: [Vault]
 
 commands:

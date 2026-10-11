@@ -1,4 +1,4 @@
-package jp.kamei.scratchlottery.gui;
+package jp.pakupaku.scratchlottery.gui;
 
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.InventoryHolder;

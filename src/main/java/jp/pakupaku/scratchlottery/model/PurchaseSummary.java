@@ -1,4 +1,4 @@
-package jp.kamei.scratchlottery.model;
+package jp.pakupaku.scratchlottery.model;
 
 import java.util.Collections;
 import java.util.LinkedHashMap;

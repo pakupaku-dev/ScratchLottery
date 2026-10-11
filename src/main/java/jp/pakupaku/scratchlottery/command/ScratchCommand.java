@@ -1,6 +1,6 @@
-package jp.kamei.scratchlottery.command;
+package jp.pakupaku.scratchlottery.command;
 
-import jp.kamei.scratchlottery.service.LotteryService;
+import jp.pakupaku.scratchlottery.service.LotteryService;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;

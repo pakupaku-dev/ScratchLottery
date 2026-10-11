@@ -1,8 +1,8 @@
-package jp.kamei.scratchlottery;
+package jp.pakupaku.scratchlottery;
 
-import jp.kamei.scratchlottery.command.ScratchCommand;
-import jp.kamei.scratchlottery.listener.LotteryListener;
-import jp.kamei.scratchlottery.service.LotteryService;
+import jp.pakupaku.scratchlottery.command.ScratchCommand;
+import jp.pakupaku.scratchlottery.listener.LotteryListener;
+import jp.pakupaku.scratchlottery.service.LotteryService;
 import net.milkbowl.vault.economy.Economy;
 import org.bukkit.command.PluginCommand;
 import org.bukkit.plugin.RegisteredServiceProvider;
